@@ -31,30 +31,30 @@ services:
    #    restart: "on-failure"
    #    networks:
    #       - project-network
-   nginx-proxy:
-    image: 'jc21/nginx-proxy-manager:latest'
-    restart: unless-stopped
-    ports:
-      - '80:80'
-      - '81:81'
-      - '443:443'
-    volumes:
-      - ./data:/data
-      - ./letsencrypt:/etc/letsencrypt
-    networks:
-         - project-network
-
-   # nginx:
-   #    restart: always
-   #    depends_on:
-   #       - project
-   #    build:
-   #       context: ./nginx
-   #       dockerfile: Dockerfile.dev
-   #    ports:
-   #       - 80:80
-   #    networks:
+   # nginx-proxy:
+   #  image: 'jc21/nginx-proxy-manager:latest'
+   #  restart: unless-stopped
+   #  ports:
+   #    - '80:80'
+   #    - '81:81'
+   #    - '443:443'
+   #  volumes:
+   #    - ./data:/data
+   #    - ./letsencrypt:/etc/letsencrypt
+   #  networks:
    #       - project-network
+
+   nginx:
+      restart: always
+      depends_on:
+         - project
+      build:
+         context: ./nginx
+         dockerfile: Dockerfile.dev
+      ports:
+         - 80:80
+      networks:
+         - project-network
    
 networks:
    project-network:
