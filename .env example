@@ -1,0 +1,9 @@
+POSTGRES_USER=postgres
+POSTGRES_PASS=postgres
+POSTGRES_DBNAME=docker2
+DATABASE=postgres
+PG_HOST=sasstwo.ci0jto3hznfw.ap-southeast-1.rds.amazonaws.com
+PG_PORT=5432
+SECRET_KEY=django-insecure-7-oj9si(z^4vb6lt_-w#$pyb%fc-h8h%xfk(&)++0-c%*o!7xw
+DEBUG=True
+ALLOWED_HOSTS=localhost 127.0.0.1 sasstwo.ci0jto3hznfw.ap-southeast-1.rds.amazonaws.com [::1]

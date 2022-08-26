@@ -1,0 +1,1 @@
+{"buildTargets":["build","createapp","down","down-v","logs","make","makemigrations","migrate","shell","superuser","up","volume"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

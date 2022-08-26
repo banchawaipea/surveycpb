@@ -1,0 +1,344 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Sat Jul  9 09:17:18 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/waipia/Desktop/django_template/project
+# makefile (from `.env', line 9)
+ALLOWED_HOSTS = localhost 127.0.0.1 [::1]
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# environment
+GDAL_DATA = /opt/homebrew/Caskroom/miniforge/base/share/gdal
+# makefile (from `.env', line 1)
+MAKEFILE_LIST :=  Makefile .env
+# makefile (from `.env', line 8)
+DEBUG = True
+# makefile (from `.env', line 3)
+POSTGRES_DBNAME = docker2
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/2c/6c90rpp502qg66k_wfz4b7z80000gn/T/vscode-ipc-d460f075-d743-4776-a5f1-c54f14e1f0fc.sock
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /opt/homebrew/Caskroom/miniforge/base/bin:/opt/homebrew/Caskroom/miniforge/base/condabin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# makefile (from `.env', line 2)
+POSTGRES_PASS = postgres
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `.env', line 1)
+POSTGRES_USER = postgres
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.cP8kxSpPK0/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+CONDA_EXE = /opt/homebrew/Caskroom/miniforge/base/bin/conda
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/waipia/Desktop/django_template/project
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/waipia
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/waipia/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+# environment
+LOGNAME = waipia
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+CONDA_PROMPT_MODIFIER = (base) 
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+CONDA_DEFAULT_ENV = base
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = waipia
+# makefile
+.DEFAULT_GOAL := build
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+PROJ_LIB = /opt/homebrew/Caskroom/miniforge/base/share/proj
+# environment
+CONDA_SHLVL = 1
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/2c/6c90rpp502qg66k_wfz4b7z80000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/waipia/Library/Application Support/Code/1.68.1-main.sock
+# environment
+PROJ_NETWORK = ON
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.15997836.15997842
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `.env', line 5)
+PG_HOST = sasstwo.ci0jto3hznfw.ap-southeast-1.rds.amazonaws.com
+# automatic
++F = $(notdir $+)
+# makefile (from `.env', line 6)
+PG_PORT = 5432
+# environment
+CPL_ZIP_ENCODING = UTF-8
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# makefile (from `.env', line 4)
+DATABASE = postgres
+# environment
+CONDA_PYTHON_EXE = /opt/homebrew/Caskroom/miniforge/base/bin/python
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+_CE_M = 
+# makefile (from `Makefile', line 4)
+ENV_FILE_PARAM = --env-file .env
+# environment
+MAKELEVEL := 0
+# makefile (from `.env', line 7)
+SECRET_KEY = 'django-insecure-7-oj9si(z^4vb6lt_-w
+# environment
+CONDA_PREFIX = /opt/homebrew/Caskroom/miniforge/base
+# environment
+VSCODE_PID = 14719
+# environment
+_CE_CONDA = 
+# environment
+LANG = C
+# variable set hash-table stats:
+# Load=83/1024=8%, Rehash=0, Collisions=2/108=2%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777233, inode 17098569): 20 files, no impossibilities.
+
+# 20 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+superuser:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 23):
+	docker-compose exec project python3 manage.py createsuperuser	
+	
+
+up:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 10):
+	docker-compose up -d
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-03 19:27:07
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+makemigrations:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 18):
+	docker-compose exec project python3 manage.py makemigrations
+	
+
+build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 8):
+	docker-compose up --build -d --remove-orphans
+	
+
+# Not a target:
+.env:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-03 21:51:24
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+migrate:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 16):
+	docker-compose exec project python3 manage.py migrate --noinput
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+logs:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 14):
+	docker-compose logs
+	
+
+createapp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 20):
+	docker-compose exec project python3 manage.py startapp app
+	
+
+down-v:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 26):
+	docker-compose down -v
+	
+
+shell:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 32):
+	docker-compose exec project python3 manage.py shell
+	
+
+volume:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 29):
+ 
+make: *** No rule to make target `all'.  Stop.
+
+	docker volume inspect project_postgres_data	
+	
+
+down:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 12):
+	docker-compose down
+	
+
+# files hash-table stats:
+# Load=16/1024=2%, Rehash=0, Collisions=1/29=3%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 2
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4082 / max = 4082 / min = 4082 / avg = 4082
+
+# Finished Make data base on Sat Jul  9 09:17:18 2022
+
+ 

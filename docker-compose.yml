@@ -1,0 +1,65 @@
+version: "3.9"
+
+services:
+   project:
+      build:
+         context: .
+         dockerfile: Dockerfile_web.dev
+      command: python3 manage.py runserver 0.0.0.0:8000
+      volumes:
+        - .:/app
+      # ports:
+      #   - 8001:8000
+      env_file:
+        - .env
+      restart: "on-failure"
+      # depends_on:
+      #   - postgres-db
+      networks:
+        - project-network
+
+   # postgres-db:
+   #    image: kartoza/postgis:12.0
+   #    ports:
+   #       - 25123:5432
+   #    volumes:
+   #       - postgres_data:/var/lib/postgresql
+   #    environment:
+   #       - POSTGRES_USER=${POSTGRES_USER}
+   #       - POSTGRES_PASS=${POSTGRES_PASS}
+   #       - POSTGRES_DBNAME=${POSTGRES_DBNAME}
+   #    restart: "on-failure"
+   #    networks:
+   #       - project-network
+   nginx-proxy:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+    networks:
+         - project-network
+
+   nginx:
+      restart: always
+      depends_on:
+         - project
+      build:
+         context: ./nginx
+         dockerfile: Dockerfile.dev
+      ports:
+         - 8080:80
+      networks:
+         - project-network
+   
+networks:
+   project-network:
+      driver: bridge
+      
+
+volumes:
+   postgres_data:
