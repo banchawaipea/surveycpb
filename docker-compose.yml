@@ -31,6 +31,8 @@ services:
    #    restart: "on-failure"
    #    networks:
    #       - project-network
+   
+   
 
    nginx:
       restart: always
@@ -42,18 +44,8 @@ services:
       ports:
          - 80:80
          - 443:443
-      volumes:
-         - ./nginx/conf/:/etc/nginx/conf.d/:ro
-         - ./certbot/www:/var/www/certbot/:ro
-         - ./certbot/conf/:/etc/nginx/ssl/:ro
       networks:
          - project-network
-   
-   certbot:
-    image: certbot/certbot:latest
-    volumes:
-      - ./certbot/www/:/var/www/certbot/:rw
-      - ./certbot/conf/:/etc/letsencrypt/:rw
    
 networks:
    project-network:
