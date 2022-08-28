@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Sat Jul  9 09:17:18 2022
+
+# Make data base, printed on Sun Aug 28 08:00:14 2022
 
 # Variables
 
@@ -15,8 +18,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -24,9 +25,9 @@ VSCODE_LOG_NATIVE = false
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/waipia/Desktop/django_template/project
+CURDIR := /Users/waipia/Desktop/geo
 # makefile (from `.env', line 9)
-ALLOWED_HOSTS = localhost 127.0.0.1 [::1]
+ALLOWED_HOSTS = localhost 127.0.0.1 128.199.179.87 surveycpb.com [::1]
 # makefile
 SHELL = /bin/sh
 # environment
@@ -40,37 +41,29 @@ MAKEFILE_LIST :=  Makefile .env
 # makefile (from `.env', line 8)
 DEBUG = True
 # makefile (from `.env', line 3)
-POSTGRES_DBNAME = docker2
-# environment
-VSCODE_VERBOSE_LOGGING = true
+POSTGRES_DBNAME = defaultdb
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/2c/6c90rpp502qg66k_wfz4b7z80000gn/T/vscode-ipc-d460f075-d743-4776-a5f1-c54f14e1f0fc.sock
 # environment
 VSCODE_CWD = /
 # environment
 PATH = /opt/homebrew/Caskroom/miniforge/base/bin:/opt/homebrew/Caskroom/miniforge/base/condabin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 # makefile (from `.env', line 2)
-POSTGRES_PASS = postgres
-# environment
-VSCODE_LOG_STACK = false
+POSTGRES_PASS = AVNS_5HmRBpd_xCojwdY2E4l
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # makefile (from `.env', line 1)
-POSTGRES_USER = postgres
+POSTGRES_USER = doadmin
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.cP8kxSpPK0/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.I2vxcnv6Bj/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
 CONDA_EXE = /opt/homebrew/Caskroom/miniforge/base/bin/conda
 # environment
-VSCODE_PIPE_LOGGING = true
-# environment
-PWD = /Users/waipia/Desktop/django_template/project
+PWD = /Users/waipia/Desktop/geo
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -80,11 +73,11 @@ HOME = /Users/waipia
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/waipia/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = /Users/waipia/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LOGNAME = waipia
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 CONDA_PROMPT_MODIFIER = (base) 
 # environment
@@ -122,7 +115,9 @@ TMPDIR = /var/folders/2c/6c90rpp502qg66k_wfz4b7z80000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/waipia/Library/Application Support/Code/1.68.1-main.sock
+VSCODE_IPC_HOOK = /Users/waipia/Library/Application Support/Code/1.70.2-main.sock
+# environment
+MallocNanoZone = 0
 # environment
 PROJ_NETWORK = ON
 # makefile
@@ -132,15 +127,15 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.15997836.15997842
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.19392183.19392189
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # makefile (from `.env', line 5)
-PG_HOST = sasstwo.ci0jto3hznfw.ap-southeast-1.rds.amazonaws.com
+PG_HOST = postgis-do-user-11209316-0.b.db.ondigitalocean.com
 # automatic
 +F = $(notdir $+)
 # makefile (from `.env', line 6)
-PG_PORT = 5432
+PG_PORT = 25060
 # environment
 CPL_ZIP_ENCODING = UTF-8
 # environment
@@ -154,7 +149,7 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # makefile (from `.env', line 4)
-DATABASE = postgres
+DATABASE = defaultdb
 # environment
 CONDA_PYTHON_EXE = /opt/homebrew/Caskroom/miniforge/base/bin/python
 # automatic
@@ -172,13 +167,13 @@ SECRET_KEY = 'django-insecure-7-oj9si(z^4vb6lt_-w
 # environment
 CONDA_PREFIX = /opt/homebrew/Caskroom/miniforge/base
 # environment
-VSCODE_PID = 14719
+VSCODE_PID = 8473
 # environment
 _CE_CONDA = 
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=83/1024=8%, Rehash=0, Collisions=2/108=2%
+# Load=79/1024=8%, Rehash=0, Collisions=2/104=2%
 
 # Pattern-specific Variable Values
 
@@ -186,9 +181,9 @@ LANG = C
 
 # Directories
 
-# . (device 16777233, inode 17098569): 20 files, no impossibilities.
+# . (device 16777231, inode 19674559): 19 files, no impossibilities.
 
-# 20 files, no impossibilities in 1 directories.
+# 19 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -230,7 +225,7 @@ up:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-03 19:27:07
+#  Last modified 2022-08-26 22:01:02
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -255,7 +250,7 @@ build:
 # Not a target:
 .env:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-03 21:51:24
+#  Last modified 2022-08-26 22:43:32
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -312,9 +307,6 @@ volume:
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 29):
- 
-make: *** No rule to make target `all'.  Stop.
-
 	docker volume inspect project_postgres_data	
 	
 
@@ -337,8 +329,10 @@ down:
 # # of strings in strcache: 2
 # # of strcache buffers: 1
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+ 
 # strcache free: total = 4082 / max = 4082 / min = 4082 / avg = 4082
+ 
 
-# Finished Make data base on Sat Jul  9 09:17:18 2022
+# Finished Make data base on Sun Aug 28 08:00:14 2022
 
  

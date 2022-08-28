@@ -1,5 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/waipia/Desktop/django_template/project'
+make: Entering directory `/Users/waipia/Desktop/geo'
 docker-compose up --build -d --remove-orphans
-make: Leaving directory `/Users/waipia/Desktop/django_template/project'
+ 
+make: Leaving directory `/Users/waipia/Desktop/geo'
  
