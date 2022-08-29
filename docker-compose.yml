@@ -17,6 +17,7 @@ services:
       #   - postgres-db
       networks:
         - project-network
+        
    nginx-proxy-manager:
     image: 'jc21/nginx-proxy-manager:latest'
     restart: unless-stopped
