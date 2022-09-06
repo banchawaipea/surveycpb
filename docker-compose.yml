@@ -15,8 +15,8 @@ services:
       restart: "on-failure"
       # depends_on:
       #   - postgres-db
-      networks:
-        - project-network
+      # networks:
+      #   - project-network
         
   #  nginx-proxy-manager:
   #   image: 'jc21/nginx-proxy-manager:latest'
@@ -57,16 +57,15 @@ services:
    # postgres-db:
    #    image: kartoza/postgis:12.0
    #    ports:
-   #       - 25123:5432
+   #       - 5430:5430
    #    volumes:
-   #       - postgres_data:/var/lib/postgresql
+   #       - ./postgres:/var/lib/postgresql
    #    environment:
    #       - POSTGRES_USER=${POSTGRES_USER}
    #       - POSTGRES_PASS=${POSTGRES_PASS}
    #       - POSTGRES_DBNAME=${POSTGRES_DBNAME}
    #    restart: "on-failure"
-   #    networks:
-   #       - project-network
+      
    
    # nginx:
    #    restart: always
@@ -81,10 +80,9 @@ services:
    #    networks:
    #       - project-network
    
-networks:
-   project-network:
-      driver: bridge
-      
+# networks:
+#    project-network:
+#       driver : bridge
 
 volumes:
    postgres_data:
