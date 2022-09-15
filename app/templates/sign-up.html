@@ -14,7 +14,7 @@ License: For each use you must have a valid license purchased only from above li
 <html lang="en">
 	<!--begin::Head-->
 	<head><base href="../../../"/>
-		<title>LOGIN WITHx</title>
+		<title>Sign Up สมัครสมาชิก</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Blazor, Django, Flask & Laravel versions. Grab your copy now and get life-time updates for free." />
 		<meta name="keywords" content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Blazor, Django, Flask & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
@@ -75,10 +75,10 @@ License: For each use you must have a valid license purchased only from above li
 								<!--begin::Heading-->
 								<div class="text-center mb-11">
 									<!--begin::Title-->
-									<h1 class="text-dark fw-bolder mb-3">Sign In</h1>
+									<h1 class="text-dark fw-bolder mb-3">Sign Up</h1>
 									<!--end::Title-->
 									<!--begin::Subtitle-->
-									<div class="text-gray-500 fw-semibold fs-6">เข้าสู่ระบบด้วยรหัสพนักงาน</div>
+									<div class="text-gray-500 fw-semibold fs-6">สมัครสมาชิกด้วยรหัสพนักงาน</div>
 									<!--end::Subtitle=-->
 								</div>
 								<!--begin::Heading-->
@@ -91,6 +91,13 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="fv-row mb-8">
 									<!--begin::Email-->
 									<input type="text" placeholder="รหัสพนักงาน" name="accuser" autocomplete="off" class="form-control bg-transparent" />
+									<!--end::Email-->
+								</div>
+								<!--end::Input group=-->
+								<!--begin::Input group=-->
+								<div class="fv-row mb-8">
+									<!--begin::Email-->
+									<input type="text" placeholder="Email" name="accuser" autocomplete="off" class="form-control bg-transparent" />
 									<!--end::Email-->
 								</div>
 								<!--end::Input group=-->
@@ -107,7 +114,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-grid mb-10">
 									<button type="submit" id="kt_sign_in_submit" class="btn btn-primary">
 										<!--begin::Indicator label-->
-										<span class="indicator-label">Sign In</span>
+										<span class="indicator-label">Sign Up</span>
 										<!--end::Indicator label-->
 										<!--begin::Indicator progress-->
 										<span class="indicator-progress">Please wait...
@@ -117,8 +124,8 @@ License: For each use you must have a valid license purchased only from above li
 								</div>
 								<!--end::Submit button-->
 								<!--begin::Sign up-->
-								<div class="text-gray-500 text-center fw-semibold fs-6">Not a Member yet?
-								<a href="{% url 'signup-page' %}" class="link-primary">Sign up</a></div>
+								<div class="text-gray-500 text-center fw-semibold fs-6">เข้าสู่ระบบ
+								<a href="{% url 'login-page' %}" class="link-primary">Sign In</a></div>
 								<!--end::Sign up-->
 							</form>
 							<!--end::Form-->
