@@ -12,7 +12,7 @@ def Index(request):
 
 
 def Login(request):
-    context = {} #สิ่งที่จะแนบไป
+    context = {} #สิ่งที่จะแนบไป dictionary
     if request.method == 'POST':
         data = request.POST.copy()
         username = data.get('username')
@@ -31,5 +31,10 @@ def Login(request):
 
 
 def Signup(request):
-
+    context = {} #สิ่งที่จะแนบไป dictionary
+    if request.method == 'POST':
+        data = request.POST.copy()
+        username = data.get('username')
+        password = data.get('password')
+        
     return render(request, 'sign-up.html')
