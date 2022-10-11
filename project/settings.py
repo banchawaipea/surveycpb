@@ -143,6 +143,10 @@ STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+#เพิ่ม ระบบ Authenticate
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'index-page'
+LOGOUT_REDIRECT_URL = 'login'
 
 
 # Default primary key field type

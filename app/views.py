@@ -1,7 +1,8 @@
+from multiprocessing import context
 from unicodedata import name
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
 
@@ -9,14 +10,24 @@ from django.contrib.auth.decorators import login_required
 def Index(request):
     return render(request, 'main.html')
 
+
 def Login(request):
+    context = {} #สิ่งที่จะแนบไป
     if request.method == 'POST':
         data = request.POST.copy()
-        name = data.get('name')
-        price = data.get('price')
-        detail = data.get('detail')
-        imageurl = data.get('imageurl')
-    return render(request, 'sign-in.html')
+        username = data.get('username')
+        password = data.get('password')
+        # context['user'] = username
+        # context['pass'] = password
+        # context['test_sent'] = 'TEST ARM'
+        try:
+            user = authenticate(username=username, password=password)
+            login(request, user)
+        except:
+            context['message'] = 'user หรือ password อาจไม่ถูกต้อง'
+
+    return render(request, 'sign-in.html', context)
+
 
 
 def Signup(request):
