@@ -3,3 +3,5 @@
 main html
 <img src="{% static 'Logowaipia1.png' %}">
 <a href="{% url 'logout' %}"> Logout</a>
+
+{{ user.profile.usertype }}
