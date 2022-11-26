@@ -123,16 +123,16 @@ $(document).ready(function () {
   });
 
   // zoom to fly
-    map.on("click", function (e) { 
-        map.flyTo(e.latlng, 20, { duration: 3 });
-    });
+    // map.on("click", function (e) { 
+    //     map.flyTo(e.latlng, 20, { duration: 3 });
+    // });
     
 
   // event zoom
-  map.on("zoomend", function (e) {
-    var zoom = map.getZoom();
-    // console.log(zoom);
-  });
+  // map.on("zoomend", function (e) {
+  //   var zoom = map.getZoom();
+  //   // console.log(zoom);
+  // });
 
   // group layer
   var baseMaps = {

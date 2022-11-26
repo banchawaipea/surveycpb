@@ -66,7 +66,7 @@ License: For each use you must have a valid license purchased only from above li
 				<!--begin::Body-->
 				<div class="d-flex flex-center w-lg-50 p-10">
 					<!--begin::Card-->
-					<div class="card rounded-3 w-md-550px">
+					<div class="card rounded-3 w-md-550px" style ="background-color:white">
 						<!--begin::Card body-->
 						<div class="card-body p-10 p-lg-20">
 							<!--begin::Form-->
@@ -130,7 +130,7 @@ License: For each use you must have a valid license purchased only from above li
 		</div>
 		<!--end::Root-->
 		<!--begin::Javascript-->
-		<script>var hostUrl = "assets/";</script>
+		<script>var hostUrl = "{% static 'assets/' %}";</script>
 		<!--begin::Global Javascript Bundle(used by all pages)-->
 		<script src="{% static 'assets/plugins/global/plugins.bundle.js' %}"></script>
 		<script src="{% static 'assets/js/scripts.bundle.js' %}"></script>
