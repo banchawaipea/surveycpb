@@ -146,6 +146,16 @@ $(document).ready(function () {
     Tiles: tiles,
   };
 
+  // group layer leaflet-geoman
+  var overlayMaps = {
+    esri: esri,
+    Marker: marker,
+    Circle: circle,
+    Polygon: polygon
+  };
+
+  
+  layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
   // browser location
   //   map.locate({ setView: true, maxZoom: 16 });
 
@@ -179,36 +189,32 @@ $(document).ready(function () {
   // Init Leaflet-Geoman
   map.pm.addControls({ position: "topleft" });
 
+  
+  // leaflet-geoman layers control
+  var drawnItems = new L.FeatureGroup();
+  map.addLayer(drawnItems);
+  map.pm.setGlobalOptions({ layerGroup: drawnItems });
+  // map.pm.addControls({ position: "topleft" });
+
+
   // draw start leaflet geoman
   map.on("pm:drawstart", (e) => {
     console.log(e);
     console.log(e.target);
   });
 
+  count = 0
   // draw end leaflet geoman
   map.on("pm:drawend", (e) => {
+    
+    layerControl.addOverlay(drawnItems, 'drawnItems');
     console.log(e);
   });
+
   
 
-  // leaflet-geoman layers control
-  var drawnItems = new L.FeatureGroup();
-  map.addLayer(drawnItems);
-  map.pm.setGlobalOptions({ layerGroup: drawnItems });
-  map.pm.addControls({ position: "topleft" });
 
-
-
-  // group layer leaflet-geoman
-  var overlayMaps = {
-    esri: esri,
-    Marker: marker,
-    Circle: circle,
-    Polygon: polygon,
-    "Drawn Items": drawnItems,
-  };
-  L.control.layers(baseMaps, overlayMaps).addTo(map);
-
+  
   
   
   
